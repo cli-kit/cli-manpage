@@ -1,0 +1,75 @@
+{
+  "name": "manpage",
+  "version": "0.0.1",
+  "description": "Man page generation tool",
+  "author": "muji <noop@xpm.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freeformsystems/cli-manpage"
+  },
+  "bugs": {
+    "url": "https://github.com/freeformsystems/cli-manpage/issues",
+    "email": "muji <noop@xpm.io>"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/freeformsystems/cli-manpage/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "manual",
+    "help",
+    "man"
+  ],
+  "dependencies": {
+    "cli-command": "~0.8.51",
+    "cli-logger": "~0.5.10",
+    "cli-interface": "~1.0.8",
+    "cli-native": "~1.0.0",
+    "ttycolor": "~0.8.9"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0",
+    "chai": "~1.9.0",
+    "istanbul": "~0.2.4"
+  },
+  "directories": {
+    "bin": "./bin"
+  },
+  "engine": [
+    "node >= 0.10.21"
+  ],
+  "scripts": {
+    "manual": "./bin/manpage --standalone --output ./doc/man ./bin/manpage",
+    "build": "mdp --force -v",
+    "test": "istanbul cover _mocha -- -u bdd --recursive --bail --reporter list -A test/unit/"
+  },
+  "mdp": {
+    "title": {
+      "ref": "name",
+      "format": "%s(1)"
+    },
+    "pedantic": true,
+    "include": "doc/readme",
+    "require": "lib",
+    "links": "links.md",
+    "toc": "Table of Contents",
+    "base": "https://github.com/freeformsystems/cli-manpage",
+    "partial": [
+      {
+        "inc": [
+          "introduction.md",
+          "install.md"
+        ]
+      },
+      {
+        "inc": [
+          "license.md",
+          "footer.md"
+        ]
+      }
+    ]
+  }
+}
