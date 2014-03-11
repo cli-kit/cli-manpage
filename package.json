@@ -36,7 +36,8 @@
     "istanbul": "~0.2.4"
   },
   "directories": {
-    "bin": "./bin"
+    "bin": "./bin",
+    "man": "./doc/man"
   },
   "engine": [
     "node >= 0.10.21"
