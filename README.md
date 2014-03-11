@@ -1,12 +1,13 @@
 Table of Contents
 =================
 
-* [manpage(1)](#manpage1)
+* [cli-manpage(1)](#cli-manpage1)
   * [Install](#install)
+  * [Usage](#usage)
   * [License](#license)
 
-manpage(1)
-==========
+cli-manpage(1)
+==============
 
 Man page generation program for the [command](https://github.com/freeformsystems/cli-command) module.
 
@@ -14,6 +15,34 @@ Man page generation program for the [command](https://github.com/freeformsystems
 
 ```
 npm i -g cli-manpage
+```
+
+## Usage
+
+```
+Man page generation tool.
+
+Usage: manpage [-se] [--color|--no-color] [-s|--standalone]
+               [-e|--error] [--help] [--version]
+               [-o|--output==<dir>] [-a|--argument==<name>]
+               [--section==<1-8>] <args>
+
+Options:
+ -o, --output=[dir] Output directory for generated man pages.
+ -s, --standalone   Generate a single standalone man page.
+ -e, --error        Use the program stderr stream.
+ -a, --argument=[name]
+                    Argument used to print help output.
+     --[no]-color   Enable or disable terminal colors.
+     --section=[1-8]
+                    Man page section.
+     --help         Display this help and exit.
+     --version      Output version information and exit.
+
+Examples:
+ manpage prg        Print the man page for prg.
+
+Report bugs to muji <noop@xpm.io>.
 ```
 
 ## License
