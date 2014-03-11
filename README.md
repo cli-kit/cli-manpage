@@ -44,7 +44,7 @@ Examples:
  manpage --standalone --output ./doc/man
                     Generate a single man page for a program.
  manpage --output ./doc/man
-                    Generate a man pages for all program commands.
+                    Generate man pages for all program commands.
 
 Report bugs to muji <noop@xpm.io>.
 ```
