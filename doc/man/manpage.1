@@ -1,0 +1,39 @@
+.TH "MANPAGE" "1" "2014-03-11T02:49:32.714Z" "manpage 1.0" "User Commands"
+.SH "NAME"
+manpage
+.SH "DESCRIPTION"
+.PP
+Man page generation tool.
+.SH "USAGE"
+
+.LT
+manpage [\-seh] [\-\-color|\-\-no\-color] [\-s|\-\-standalone] [\-e|\-\-error]
+        [\-h|\-\-help] [\-\-version] [\-o|\-\-output==<dir>]
+        [\-a|\-\-argument==<name>] [\-\-section==<1\-8>] <args>
+.SH "OPTIONS"
+.BL
+.IP "\[ci]" 4
+\fB\-o, \-\-output=[dir]\fR: Output directory for generated man pages.
+.IP "\[ci]" 4
+\fB\-s, \-\-standalone\fR: Generate a single standalone man page.
+.IP "\[ci]" 4
+\fB\-e, \-\-error\fR: Use the program stderr stream.
+.IP "\[ci]" 4
+\fB\-a, \-\-argument=[name]\fR: Argument used to print help output.
+.IP "\[ci]" 4
+\fB\-h, \-\-help\fR: Display this help and exit.
+.IP "\[ci]" 4
+\fB\-\-[no]\-color\fR: Enable or disable terminal colors.
+.IP "\[ci]" 4
+\fB\-\-section=[1\-8]\fR: Man page section.
+.IP "\[ci]" 4
+\fB\-\-version\fR: Output version information and exit.
+.EL
+.SH "EXAMPLES"
+.BL
+.IP "\[ci]" 4
+\fBmanpage prg\fR: Print the man page for prg.
+.EL
+.SH "BUGS"
+.PP
+Report bugs to muji &#110;&#x6f;&#111;&#112;&#64;&#120;&#112;&#109;&#46;&#x69;&#x6f;.
