@@ -1,5 +1,5 @@
 {
-  "name": "manpage",
+  "name": "cli-manpage",
   "version": "0.0.1",
   "description": "Man page generation tool",
   "author": "muji <noop@xpm.io>",
