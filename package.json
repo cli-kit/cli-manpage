@@ -66,6 +66,11 @@
         ]
       },
       {
+        "title": "Usage",
+        "bin": "manpage --help",
+        "type": "code"
+      },
+      {
         "inc": [
           "license.md",
           "footer.md"
