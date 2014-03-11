@@ -13,20 +13,20 @@ Man page generation tool.
 
 ## Examples
 
+Generate man pages for all `prg` commands:
+
+```
+$0 ${opt_output_long} ./doc/man prg
+```
+
+Generate a standalone man page for `prg`:
+
+```
+$0 ${opt_standalone_short} ${opt_output_long} ./doc/man prg
+```
+
 Print the man page for `prg`:
 
 ```
 $0 prg
-```
-
-Generate a standalone man page for a program:
-
-```
-$0 ${opt_standalone_long} ${opt_output_long} ./doc/man
-```
-
-Generate man pages for all program commands:
-
-```
-$0 ${opt_output_long} ./doc/man
 ```

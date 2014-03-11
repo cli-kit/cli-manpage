@@ -40,11 +40,11 @@ Options:
      --version      Output version information and exit.
 
 Examples:
+ manpage --output ./doc/man prg
+                    Generate man pages for all prg commands.
+ manpage -s --output ./doc/man prg
+                    Generate a standalone man page for prg.
  manpage prg        Print the man page for prg.
- manpage --standalone --output ./doc/man
-                    Generate a standalone man page for a program.
- manpage --output ./doc/man
-                    Generate man pages for all program commands.
 
 Report bugs to muji <noop@xpm.io>.
 ```
