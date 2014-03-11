@@ -27,7 +27,8 @@
     "cli-command": "~0.8.51",
     "cli-logger": "~0.5.12",
     "cli-interface": "~1.0.8",
-    "ttycolor": "~0.8.10"
+    "ttycolor": "~0.8.10",
+    "async": "0.2.10"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
