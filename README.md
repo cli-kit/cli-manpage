@@ -22,12 +22,19 @@ npm i -g cli-manpage
 ```
 Man page generation tool.
 
-Usage: manpage [-se] [--color|--no-color] [-s|--standalone]
-               [-e|--error] [--help] [--version]
-               [-o|--output==<dir>] [-a|--argument==<name>]
-               [--section==<1-8>] <args>
+Usage: manpage <command> [-se] [--color|--no-color]
+               [-s|--standalone] [-e|--error] [--help]
+               [--version] [-o|--output==<dir>]
+               [-a|--argument==<name>] [--section==<1-8>] <args>
 
 Options:
+
+Command should be one of: help.
+
+Commands:
+ help               Show help for commands.
+
+Arguments:
  -o, --output=[dir] Output directory for generated man pages.
  -s, --standalone   Generate a single standalone man page.
  -e, --error        Use the program stderr stream.

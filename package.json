@@ -24,7 +24,7 @@
     "man"
   ],
   "dependencies": {
-    "cli-command": "~0.8.51",
+    "cli-command": "~0.8.71",
     "cli-logger": "~0.5.12",
     "cli-interface": "~1.0.8",
     "ttycolor": "~0.8.10",

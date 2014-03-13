@@ -4,12 +4,17 @@ manpage
 .SH "DESCRIPTION"
 .PP
 Man page generation tool.
-.SH "USAGE"
+.SH "SYNOPSIS"
 
 .LT
-manpage [\-se] [\-\-color|\-\-no\-color] [\-s|\-\-standalone] [\-e|\-\-error]
-        [\-\-help] [\-\-version] [\-o|\-\-output==<dir>]
+manpage <command> [\-se] [\-\-color|\-\-no\-color] [\-s|\-\-standalone]
+        [\-e|\-\-error] [\-\-help] [\-\-version] [\-o|\-\-output==<dir>]
         [\-a|\-\-argument==<name>] [\-\-section==<1\-8>] <args>
+.SH "COMMANDS"
+.BL
+.IP "\[ci]" 4
+\fBhelp\fR: Show help for commands.
+.EL
 .SH "OPTIONS"
 .BL
 .IP "\[ci]" 4
@@ -31,6 +36,10 @@ manpage [\-se] [\-\-color|\-\-no\-color] [\-s|\-\-standalone] [\-e|\-\-error]
 .EL
 .SH "EXAMPLES"
 .BL
+.IP "\[ci]" 4
+\fBmanpage \-\-output ./doc/man prg\fR: Generate man pages for all prg commands.
+.IP "\[ci]" 4
+\fBmanpage \-s \-\-output ./doc/man prg\fR: Generate a standalone man page for prg.
 .IP "\[ci]" 4
 \fBmanpage prg\fR: Print the man page for prg.
 .EL
