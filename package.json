@@ -1,6 +1,6 @@
 {
   "name": "cli-manpage",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Man page generation tool",
   "author": "muji <noop@xpm.io>",
   "repository": {
