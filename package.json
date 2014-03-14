@@ -24,7 +24,7 @@
     "man"
   ],
   "dependencies": {
-    "cli-command": "~0.8.75",
+    "cli-command": "~0.8.76",
     "cli-logger": "~0.5.12",
     "cli-interface": "~1.0.8",
     "ttycolor": "~0.8.10",
@@ -43,7 +43,7 @@
     "node >= 0.10.21"
   ],
   "scripts": {
-    "manual": "./bin/manpage --standalone --output ./doc/man ./bin/manpage",
+    "manual": "./bin/manpage --output ./doc/man ./bin/manpage",
     "build": "mdp --force -v",
     "test": "istanbul cover _mocha -- -u bdd --recursive --bail --reporter list -A test/unit/"
   },
