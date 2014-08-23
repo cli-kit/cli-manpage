@@ -3,6 +3,7 @@
   "version": "0.0.8",
   "description": "Man page generation tool",
   "author": "muji <noop@xpm.io>",
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/freeformsystems/cli-manpage"
@@ -24,11 +25,11 @@
     "man"
   ],
   "dependencies": {
-    "cli-command": "~0.8.76",
-    "cli-logger": "~0.5.12",
+    "async": "0.2.10",
+    "cli-command": "^0.8.121",
     "cli-interface": "~1.0.8",
-    "ttycolor": "~0.8.10",
-    "async": "0.2.10"
+    "cli-logger": "~0.5.12",
+    "ttycolor": "~0.8.10"
   },
   "devDependencies": {
     "mocha": "~1.17.0",

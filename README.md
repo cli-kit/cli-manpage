@@ -20,12 +20,12 @@ npm i -g cli-manpage
 ## Usage
 
 ```
-Man page generation tool.
-
 Usage: manpage <command> [-se] [--color|--no-color]
                [-s|--standalone] [-e|--error] [--help]
                [--version] [-o|--output==<dir>]
                [-a|--argument==<name>] [--section==<1-8>] <args>
+
+Man page generation tool.
 
 Options:
 
