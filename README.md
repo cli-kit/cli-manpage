@@ -27,21 +27,18 @@ Usage: manpage <command> [-se] [--color|--no-color]
 
 Man page generation tool.
 
-Options:
-
-Command should be one of: help.
-
 Commands:
  help               Show help for commands.
 
-Arguments:
- -o, --output=[dir] Output directory for generated man pages.
+Options:
+ -o, --output==[dir]
+                    Output directory for generated man pages.
  -s, --standalone   Generate a single standalone man page.
  -e, --error        Use the program stderr stream.
- -a, --argument=[name]
+ -a, --argument==[name]
                     Argument used to print help output.
      --[no]-color   Enable or disable terminal colors.
-     --section=[1-8]
+     --section==[1-8]
                     Man page section.
      --help         Display this help and exit.
      --version      Output version information and exit.
