@@ -1,49 +1,42 @@
-.TH "MANPAGE" "1" "March 2014" "manpage 1.0" "User Commands"
+.TH "MANPAGE" "1" "September 2014" "manpage 0.0.10" "User Commands"
 .SH "NAME"
 manpage
+.SH "USAGE"
+
+.SP
+cli\-manpage <command> [\-se] [\-\-color|\-\-no\-color]
+.br
+            [\-s|\-\-standalone] [\-e|\-\-error] [\-\-help] [\-\-version]
+.br
+            [\-o|\-\-output==<dir>] [\-a|\-\-argument==<name>]
+.br
+            [\-\-section==<1\-8>] <args>
 .SH "DESCRIPTION"
 .PP
 Man page generation tool.
-.SH "SYNOPSIS"
-
-.LT
-manpage <command> [\-se] [\-\-color|\-\-no\-color] [\-s|\-\-standalone]
-        [\-e|\-\-error] [\-\-help] [\-\-version] [\-o|\-\-output==<dir>]
-        [\-a|\-\-argument==<name>] [\-\-section==<1\-8>] <args>
 .SH "COMMANDS"
 .BL
 .IP "\[ci]" 4
 \fBhelp\fR: Show help for commands.
-.IP "\[ci]" 4
-\fBmock\fR: A mock command.
 .EL
 .SH "OPTIONS"
 .BL
 .IP "\[ci]" 4
-\fB\-o, \-\-output=[dir]\fR: Output directory for generated man pages.
+\fB\-o, \-\-output==[dir]\fR: Output directory for generated man pages.
 .IP "\[ci]" 4
 \fB\-s, \-\-standalone\fR: Generate a single standalone man page.
 .IP "\[ci]" 4
 \fB\-e, \-\-error\fR: Use the program stderr stream.
 .IP "\[ci]" 4
-\fB\-a, \-\-argument=[name]\fR: Argument used to print help output.
+\fB\-a, \-\-argument==[name]\fR: Argument used to print help output.
 .IP "\[ci]" 4
 \fB\-\-[no]\-color\fR: Enable or disable terminal colors.
 .IP "\[ci]" 4
-\fB\-\-section=[1\-8]\fR: Man page section.
+\fB\-\-section==[1\-8]\fR: Man page section.
 .IP "\[ci]" 4
 \fB\-\-help\fR: Display this help and exit.
 .IP "\[ci]" 4
 \fB\-\-version\fR: Output version information and exit.
-.EL
-.SH "EXAMPLES"
-.BL
-.IP "\[ci]" 4
-\fBmanpage \-\-output ./doc/man prg\fR: Generate man pages for all prg commands.
-.IP "\[ci]" 4
-\fBmanpage \-s \-\-output ./doc/man prg\fR: Generate a standalone man page for prg.
-.IP "\[ci]" 4
-\fBmanpage prg\fR: Print the man page for prg.
 .EL
 .SH "BUGS"
 .PP

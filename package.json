@@ -25,11 +25,11 @@
     "man"
   ],
   "dependencies": {
-    "async": "0.2.10",
-    "cli-command": "^0.8.222",
-    "cli-interface": "^1.0.8",
+    "async": "^0.9.0",
+    "cli-command": "^0.8.279",
+    "cli-interface": "^1.0.16",
     "cli-logger": "^0.5.27",
-    "ttycolor": "^0.8.12"
+    "ttycolor": "^0.8.13"
   },
   "devDependencies": {
     "chai": "^1.9.1",
@@ -44,8 +44,9 @@
     "node >= 0.10.21"
   ],
   "scripts": {
+    "docs": "npm run manual && npm run readme",
     "manual": "./bin/manpage --output ./doc/man ./bin/manpage",
-    "build": "mdp --force -v",
+    "readme": "mdp --force -v",
     "test": "istanbul cover _mocha -- -u bdd --recursive --bail --reporter list -A test/unit/"
   },
   "mdp": {
