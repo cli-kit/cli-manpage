@@ -20,10 +20,11 @@ npm i -g cli-manpage
 ## Usage
 
 ```
-Usage: manpage <command> [-se] [--color|--no-color]
-               [-s|--standalone] [-e|--error] [--help]
-               [--version] [-o|--output==<dir>]
-               [-a|--argument==<name>] [--section==<1-8>] <args>
+Usage: cli-manpage <command> [-se] [--color|--no-color]
+                   [-s|--standalone] [-e|--error] [--help]
+                   [--version] [-o|--output==<dir>]
+                   [-a|--argument==<name>] [--section==<1-8>]
+                   <args>
 
 Man page generation tool.
 
@@ -42,13 +43,6 @@ Options:
                     Man page section.
      --help         Display this help and exit.
      --version      Output version information and exit.
-
-Examples:
- manpage --output ./doc/man prg
-                    Generate man pages for all prg commands.
- manpage -s --output ./doc/man prg
-                    Generate a standalone man page for prg.
- manpage prg        Print the man page for prg.
 
 Report bugs to muji <noop@xpm.io>.
 ```

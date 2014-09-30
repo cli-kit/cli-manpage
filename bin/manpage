@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
 var program = require('../lib/manpage');
-program(require('../package.json')).parse();
+program(require('../package.json'), 'manpage').parse();
